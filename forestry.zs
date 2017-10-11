@@ -43,7 +43,7 @@ recipes.addShaped(<forestry:stamps:5>*64,
     [Paper, Paper ,Paper],
     [HoneyD,HoneyD,HoneyD]]);
 recipes.addShaped(<forestry:stamps:6>*64,
-    [[<draconicevolution:nugget>,<draconicevolution:nugget>,<draconicevolution:nugget>],
+    [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],
     [Paper, Paper ,Paper],
     [HoneyD,HoneyD,HoneyD]]);
 	
@@ -76,7 +76,7 @@ recipes.addShaped(<forestry:stamps:5>*64,
     [Paper, Paper ,Paper],
     [Resin,Resin,Resin]]);
 recipes.addShaped(<forestry:stamps:6>*64,
-    [[<draconicevolution:nugget>,<draconicevolution:nugget>,<draconicevolution:nugget>],
+    [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],
     [Paper, Paper ,Paper],
     [Resin,Resin,Resin]]);
 	

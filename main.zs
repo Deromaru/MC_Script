@@ -5,9 +5,12 @@ var Steel = <ore:ingotSteel>;
 <ore:leather>.add (<primal:pigman_leather>);
 
 //============================================================
-
-recipes.remove(<actuallyadditions:item_wings_of_the_bats>);
-
+//-BC TP pipes
+recipes.remove(<bcextrapipes:teleport_receiver_item>);
+recipes.remove(<bcextrapipes:teleport_sender_item>);
+recipes.addShapeless(<bcextrapipes:teleport_sender_item>, [<bcextrapipes:teleport_receiver_item>.giveBack(<minecraft:hopper>)]);
+recipes.addShapeless(<bcextrapipes:teleport_receiver_item>, [<bcextrapipes:teleport_sender_item>, <minecraft:hopper>]);
+recipes.addShapeless(<bcextrapipes:teleport_sender_item>*4, [<buildcrafttransport:pipe_diamond_item>, <avaritia:endest_pearl>]);
 
 recipes.addShaped(<primal:torch_wood> * 4, [[<ore:clumpFuel>], [<ore:stickWood>]]);
 
@@ -32,9 +35,9 @@ recipes.addShaped(<actuallyadditions:item_void_bag>,
 	
 recipes.remove(<randomthings:redstoneremote>);
 recipes.addShaped(<randomthings:redstoneremote>, 
-	[[null, <draconicevolution:energy_crystal:6>, null], 
+	[[null, <opencomputers:card>, null], 
 	[null, <ore:compressed5xNetherrack>, null], 
-	[<ore:obsidian>, <ore:obsidian>, <minecraft:obsidian>]]);
+	[<ore:obsidian>, <opencomputers:material:16>, <ore:obsidian>]]);
 
 recipes.remove(<cyberware:surgery_chamber>);
 recipes.addShaped(<cyberware:surgery_chamber>, 
@@ -93,7 +96,7 @@ recipes.addShaped(<stevescarts:cartmodule:61>,
 	[<advancedrocketry:advrocketmotor>, <galacticraftplanets:item_basic_asteroids:1>, <advancedrocketry:advrocketmotor>]]);
 
 
-recipes.addShapeless(<storagedrawers:upgradeCreative> , [, <storagedrawers:upgrade_template>, <industrialforegoing:black_hole_unit>]);
+recipes.addShapeless(<storagedrawers:upgrade_creative>, [<storagedrawers:upgrade_template>, <industrialforegoing:black_hole_unit>]);
 
 recipes.addShaped(<opencomputers:component:18>,
     [[<avaritia:resource:4>,<opencomputers:card:3>,<avaritia:resource:4>],
@@ -119,18 +122,6 @@ recipes.addShaped(<libvulpes:ore0:8>*4,
     [<ore:CoalCoke>, <minecraft:iron_block> ,<ore:CoalCoke>],
     [<minecraft:coal_block>,<ore:CoalCoke>,<minecraft:coal_block>]]);
 
-//Flux network nerf(Requested by Boom)
-recipes.remove(<fluxnetworks:fluxpoint>);
-recipes.addShaped(<fluxnetworks:fluxpoint>,
-    [[null,<fluxnetworks:fluxcore>,null],
-    [<fluxnetworks:fluxcore>, <draconicevolution:chaos_shard:2> ,<fluxnetworks:fluxcore>],
-    [null,<fluxnetworks:fluxcore>,null]]);
-recipes.remove(<fluxnetworks:fluxplug>);
-recipes.addShaped(<fluxnetworks:fluxplug>,
-    [[null,<fluxnetworks:fluxcore>,null],
-    [<fluxnetworks:fluxcore>, <draconicevolution:chaos_shard:1> ,<fluxnetworks:fluxcore>],
-    [null,<fluxnetworks:fluxcore>,null]]);
-	
 //TMP basalt Fix
 furnace.addRecipe(<chisel:basalt>, <ic2:resource:0>);
 
@@ -138,7 +129,7 @@ furnace.addRecipe(<chisel:basalt>, <ic2:resource:0>);
 recipes.addShaped(<minecraft:golden_apple:1>,
     [[<minecraft:gold_block>,<minecraft:gold_block>,<minecraft:gold_block>],
     [<minecraft:gold_block>, <minecraft:apple> ,<minecraft:gold_block>],
-
+	[<minecraft:gold_block>,<minecraft:gold_block>,<minecraft:gold_block>]]);
 //Endertransport	
 recipes.remove(<multistorage:ender_bag:2>);
 recipes.remove(<endertanks:blockendertank>);

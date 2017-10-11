@@ -3,7 +3,6 @@ recipes.remove(<randomthings:enderletter>);
 recipes.remove(<randomthings:endermailbox>);
 recipes.remove(<randomthings:spectrekey>);
 recipes.remove(<gendustry:mutatron>);
-recipes.remove(<draconicevolution:dislocator>);
 
 //-Immersive turrets removed due to immense lag
 recipes.remove(<immersiveengineering:metal_device1:10>);
@@ -13,6 +12,13 @@ recipes.remove(<botania:terrapick>);
 recipes.remove(<xreliquary:rending_gale>);
 recipes.remove(<xreliquary:ender_staff>);
 recipes.remove(<tconstruct:slimesling>);
+
+//-IE crates
+recipes.remove(<immersiveengineering:wooden_device0:5>);
+recipes.remove(<immersiveengineering:wooden_device0>);
+
+//-shulker box(Replaced by iron chests)
+recipes.remove(<minecraft:purple_shulker_box>);
 
 //-actuallyadditions
 recipes.remove(<actuallyadditions:block_tiny_torch>);

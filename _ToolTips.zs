@@ -1,6 +1,3 @@
-<draconicevolution:dislocator>.addTooltip(format.yellow("Dislocation?"));	
-<draconicevolution:dislocator>.addTooltip(format.gold("Heh, Nope!"));
-
 <multistorage:vault:*>.addTooltip(format.blue("Use /FruzstratedsGuide"));
 
 <endertanks:blockendertank:*>.addTooltip(format.green("+1B/s  Upgrade Mining"));
