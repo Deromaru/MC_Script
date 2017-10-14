@@ -22,7 +22,7 @@ recipes.addShaped(<buildcraftfactory:chute>,
 	[<ore:stoneToolMaterial>, <ore:gearStone>, <ore:stoneToolMaterial>], 
 	[null, <minecraft:cobblestone>, null]]);
 
-recipes.addShaped(<minecraft:wooden_pickaxe:2>, 
+recipes.addShaped(<minecraft:wooden_pickaxe:58>, 
 	[[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
 	[null, <ore:stickWood>, null], 
 	[null, <ore:stickWood>, null]]);

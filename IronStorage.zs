@@ -47,19 +47,19 @@ recipes.addShaped(<irontanks:diamond_obsidian_tank_upgrade>,
 	[<ore:obsidian>, <buildcraftfactory:tank>, <ore:obsidian>], 
 	[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
 recipes.addShaped(<irontanks:gold_diamond_tank_upgrade>, 
-	[[<ore:dustDiamond>, <irontanks:iron_tank:4>, <ore:dustDiamond>], 
+	[[<ore:dustDiamond>, <buildcraftfactory:tank>, <ore:dustDiamond>], 
 	[<ic2:glass>, <ic2:misc_resource:4>, <ic2:glass>], 
-	[<ore:dustDiamond>, <irontanks:iron_tank:4>, <ore:dustDiamond>]]);
+	[<ore:dustDiamond>, <buildcraftfactory:tank>, <ore:dustDiamond>]]);
 recipes.addShaped(<irontanks:iron_gold_tank_upgrade>, 
 	[[<ore:plateGold>, null, <ore:plateGold>], 
 	[<ic2:glass>, <ic2:misc_resource:4>, <ic2:glass>], 
-	[<ore:plateGold>, <irontanks:iron_tank:2>, <ore:plateGold>]]);
+	[<ore:plateGold>, <buildcraftfactory:tank>, <ore:plateGold>]]);
 recipes.addShaped(<irontanks:silver_gold_tank_upgrade>, 
 	[[<ore:plateGold>, null, <ore:plateGold>], 
 	[<ic2:glass>, <ic2:misc_resource:4>, <ic2:glass>], 
 	[<ore:plateGold>, null, <ore:plateGold>]]);
 recipes.addShaped(<irontanks:copper_silver_tank_upgrade>, 
-	[[<ore:plateSilver>, <buildcraftfactory:tank>, <ore:plateSilver>], 
+	[[<ore:plateSilver>, null, <ore:plateSilver>], 
 	[<ic2:glass>, <ic2:misc_resource:4>, <ic2:glass>], 
 	[<ore:plateSilver>, <buildcraftfactory:tank>, <ore:plateSilver>]]);
 recipes.addShaped(<irontanks:copper_iron_tank_upgrade>, 
