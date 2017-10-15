@@ -5,6 +5,12 @@ var Steel = <ore:ingotSteel>;
 <ore:leather>.add (<primal:pigman_leather>);
 
 //============================================================
+//-Banknote
+recipes.remove(<enderpay:blank_banknote>*64);
+recipes.addShaped(<enderpay:blank_banknote>, 
+	[[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>], 
+	[<ore:paper>, <ore:dyeBlack>, <ore:paper>], 
+	[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>]]);
 //-BC TP pipes
 recipes.remove(<bcextrapipes:teleport_receiver_item>);
 recipes.remove(<bcextrapipes:teleport_sender_item>);
