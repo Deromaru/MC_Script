@@ -11,6 +11,13 @@ recipes.addShaped(<enderpay:blank_banknote>,
 	[[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>], 
 	[<ore:paper>, <ore:dyeBlack>, <ore:paper>], 
 	[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>]]);
+	
+//-creative Cyberware
+recipes.addShaped(<cyberware:creative_battery>, 
+	[[<vc:modules/airship_module:5>, <thermaldynamics:thermaldynamics_0:5>, <vc:modules/airship_module:5>], 
+	[<thermaldynamics:thermaldynamics_0:5>, <cyberware:dense_battery>, <thermaldynamics:thermaldynamics_0:5>], 
+	[<vc:modules/airship_module:5>, <thermaldynamics:thermaldynamics_0:5>, <vc:modules/airship_module:5>]]);
+
 //-BC TP pipes
 recipes.remove(<bcextrapipes:teleport_receiver_item>);
 recipes.remove(<bcextrapipes:teleport_sender_item>);
