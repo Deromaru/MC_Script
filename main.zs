@@ -106,7 +106,7 @@ recipes.addShaped(<stevescarts:upgrade:14>,
 recipes.addShaped(<stevescarts:cartmodule:61>, 
 	[[<avaritia:resource:4>, <thermalexpansion:florb>.withTag({Fluid:"ic2coolant"}), <ore:ingotCosmicNeutronium>], 
 	[<ore:ingotCosmicNeutronium>, <avaritia:resource:5>, <ore:ingotCosmicNeutronium>], 
-	[<advancedrocketry:advrocketmotor>, <galacticraftplanets:item_basic_asteroids:1>, <advancedrocketry:advrocketmotor>]]);
+	[<advancedrocketry:advrocketmotor>, <thermalexpansion:florb>.withTag({Fluid:"ic2coolant"}), <advancedrocketry:advrocketmotor>]]);
 
 
 recipes.addShapeless(<storagedrawers:upgrade_creative>, [<storagedrawers:upgrade_template>, <industrialforegoing:black_hole_unit>]);
@@ -152,12 +152,12 @@ recipes.addShaped(<multistorage:ender_bag:2>,
 	[<ore:leather>, <avaritia:endest_pearl>,<ore:leather>],
 	[null,	<ore:leather>,	null]]);
 recipes.addShaped(<endertanks:blockendertank>,
-	[[<minecraft:blaze_rod>, <galacticraftcore:fluid_tank>, <ore:rodBlaze>],
+	[[<minecraft:blaze_rod>, <advancedrocketry:liquidtank>, <ore:rodBlaze>],
 	[<ore:obsidian>, <endertanks:ender_bucket>, <ore:obsidian>],
-	[<minecraft:blaze_rod>, <galacticraftcore:fluid_tank>, <minecraft:blaze_rod>]]);
+	[<minecraft:blaze_rod>, <advancedrocketry:liquidtank>, <minecraft:blaze_rod>]]);
 recipes.addShaped(<endertanks:ender_bucket>,
-	[[<ore:rodBlaze>, <galacticraftcore:fluid_tank>, <ore:rodBlaze>],
-	[<ore:obsidian>, <galacticraftcore:fluid_tank>, <ore:obsidian>],
+	[[<ore:rodBlaze>, <buildcraftfactory:tank>, <ore:rodBlaze>],
+	[<ore:obsidian>, <buildcraftfactory:tank>, <ore:obsidian>],
 	[<minecraft:blaze_rod>, <avaritia:endest_pearl>, <minecraft:blaze_rod>]]);
 
 //AngelheartVial
