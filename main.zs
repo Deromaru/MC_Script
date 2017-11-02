@@ -6,8 +6,8 @@ var Steel = <ore:ingotSteel>;
 
 //============================================================
 //-Banknote
-recipes.remove(<enderpay:blank_banknote>*64);
-recipes.addShaped(<enderpay:blank_banknote>, 
+recipes.remove(<enderpay:blank_banknote>);
+recipes.addShaped(<enderpay:blank_banknote>*64, 
 	[[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>], 
 	[<ore:paper>, <ore:dyeBlack>, <ore:paper>], 
 	[<ore:dyeGreen>, <ore:paper>, <ore:dyeGreen>]]);
