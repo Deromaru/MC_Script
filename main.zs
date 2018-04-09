@@ -97,3 +97,13 @@ recipes.addShaped(<industrialforegoing:black_hole_unit>,
 	[[<avaritia:singularity:8>, <avaritia:singularity:3>, <avaritia:singularity:8>],
 	[<avaritia:singularity:1>, <avaritia:endest_pearl>, <avaritia:singularity:1>],
 	[<avaritia:resource>, <avaritia:block_resource>, <avaritia:resource>]]);
+
+//Primal core
+recipes.addShapeless(<minecraft:planks>, [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>]);
+recipes.addShapeless(<primal:lacquer_stick>, [<ore:stickWood>, <ore:dustUrushi>]);
+
+recipes.remove(<primal:stone_basin>);
+recipes.addShaped(<primal:stone_basin>, 
+	[[null, null, null], 
+	[<ore:rock>, null, <ore:rock>], 
+	[null, <ore:rock>, null]]);

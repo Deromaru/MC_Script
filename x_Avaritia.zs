@@ -1,6 +1,6 @@
 var IC2Coolant = <thermalexpansion:florb>.withTag({Fluid:"ic2coolant"});
 
-mods.avaritia.ExtremeCrafting.addShaped(<cyberware:creative_battery>,
+mods.avaritia.ExtremeCrafting.addShaped("Creative Cybord Battery", <cyberware:creative_battery>,
  [[null, null, <ore:blockIron>, <cyberware:dense_battery>, <ore:blockIron>, <cyberware:dense_battery>, <ore:blockIron>, null, null],
   [null, null, <minecraft:iron_bars>, IC2Coolant, IC2Coolant, IC2Coolant, <minecraft:iron_bars>, null, null],
   [null, null, <minecraft:iron_bars>, IC2Coolant, IC2Coolant, IC2Coolant, <minecraft:iron_bars>, null, null],
@@ -12,7 +12,7 @@ mods.avaritia.ExtremeCrafting.addShaped(<cyberware:creative_battery>,
   [null, null, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, null, null]]);
 
 recipes.removeShaped(<multistorage:vault>);
-mods.avaritia.Compressor.add(<multistorage:vault>, 300, <ore:blockSteel>);
+mods.avaritia.Compressor.add("Vault Door", <multistorage:vault>, 333, <ore:blockSteel>);
 
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_helmet>);
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_chestplate>);
