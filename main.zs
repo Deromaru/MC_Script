@@ -111,8 +111,9 @@ recipes.remove(<primal:torch_wood>);
 recipes.addShaped(<primal:torch_wood>, 
 	[[<ore:miniFuels>, null], 
 	[<ore:stickWood>, null]]);
-	
-recipes.addShaped(<minecraft:planks>*8, 
+
+recipes.remove(<tconstruct:stone_torch>);
+recipes.addShaped(<tconstruct:stone_torch>*8, 
 	[[<ore:clumpFuel>, <forestry:beeswax>], 
 	[<tconstruct:stone_stick>, null]]);
 	
@@ -128,6 +129,7 @@ recipes.addShaped(<ftfragileglass:ftsugarcauldron>,
 
 //Replaced enchanting table
 recipes.remove(<minecraft:enchanting_table>);
+recipes.remove(<csb_ench_table:ender_enchanting_table>);
 <minecraft:enchanting_table>.displayName = "";
 <csb_ench_table:ender_enchanting_table>.displayName = "Enchanting table";
 recipes.addShaped(<csb_ench_table:ender_enchanting_table>, 
@@ -137,4 +139,4 @@ recipes.addShaped(<csb_ench_table:ender_enchanting_table>,
 
 //Dwarven boom sticks for all
 recipes.remove(<dwarven_candles:dynamite>);
-recipes.addShapeless(<dwarven_candles:dynamite>, [<minecraft:tnt>]);
+recipes.addShapeless(<dwarven_candles:dynamite> *16, [<minecraft:tnt>]);
