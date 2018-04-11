@@ -2,13 +2,7 @@ var Iron = <minecraft:iron_ingot>;
 var Gold = <minecraft:gold_ingot>;
 var Silver = <ore:ingotSilver>;
 var Steel = <ore:ingotSteel>;
-
 //============================================================	
-//-creative Cyberware
-recipes.addShaped(<cyberware:creative_battery>, 
-	[[<minecraft:dragon_egg>, <thermaldynamics:duct_0:5>, <minecraft:dragon_egg>], 
-	[<thermaldynamics:duct_0:5>, <cyberware:dense_battery>, <thermaldynamics:duct_0:5>], 
-	[<extrautils2:passivegenerator:8>, <thermaldynamics:duct_0:5>, <extrautils2:passivegenerator:8>]]);
 
 //-BC TP pipes
 recipes.remove(<bcextrapipes:teleport_receiver_item>);
@@ -99,11 +93,48 @@ recipes.addShaped(<industrialforegoing:black_hole_unit>,
 	[<avaritia:resource>, <avaritia:block_resource>, <avaritia:resource>]]);
 
 //Primal core
-recipes.addShapeless(<minecraft:planks>, [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:stickWood>]);
 recipes.addShapeless(<primal:lacquer_stick>, [<ore:stickWood>, <ore:dustUrushi>]);
+
+recipes.addShaped(<minecraft:planks>, 
+	[[<ore:stickWood>, <ore:stickWood>], 
+	[<ore:stickWood>, <ore:stickWood>]]);
 
 recipes.remove(<primal:stone_basin>);
 recipes.addShaped(<primal:stone_basin>, 
 	[[null, null, null], 
 	[<ore:rock>, null, <ore:rock>], 
 	[null, <ore:rock>, null]]);
+	
+//Torch changes
+
+recipes.remove(<primal:torch_wood>);
+recipes.addShaped(<primal:torch_wood>, 
+	[[<ore:miniFuels>, null], 
+	[<ore:stickWood>, null]]);
+	
+recipes.addShaped(<minecraft:planks>*8, 
+	[[<ore:clumpFuel>, <forestry:beeswax>], 
+	[<tconstruct:stone_stick>, null]]);
+	
+//Glass changes
+furnace.remove(<minecraft:glass>);
+furnace.addRecipe(<ftfragileglass:ftfragileglass>, <ore:sand>, 0.15);
+<ftfragileglass:ftfragileglass>.displayName = "Glass";
+recipes.remove(<ftfragileglass:ftsugarcauldron>);
+recipes.addShaped(<ftfragileglass:ftsugarcauldron>, 
+	[[<ftfragileglass:ftsugarblock>, null, <ftfragileglass:ftsugarblock>], 
+	[<ftfragileglass:ftsugarblock>, <minecraft:stone_pressure_plate>, <ftfragileglass:ftsugarblock>], 
+	[null, null, null]]);
+
+//Replaced enchanting table
+recipes.remove(<minecraft:enchanting_table>);
+<minecraft:enchanting_table>.displayName = "";
+<csb_ench_table:ender_enchanting_table>.displayName = "Enchanting table";
+recipes.addShaped(<csb_ench_table:ender_enchanting_table>, 
+	[[null, <ore:book>, null], 
+	[<ore:gemDiamond>, <ore:obsidian>, <ore:gemDiamond>], 
+	[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+
+//Dwarven boom sticks for all
+recipes.remove(<dwarven_candles:dynamite>);
+recipes.addShapeless(<dwarven_candles:dynamite>, [<minecraft:tnt>]);

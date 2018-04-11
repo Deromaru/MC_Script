@@ -1,4 +1,7 @@
 recipes.remove(<gendustry:mutatron>);
+recipes.remove(<storageboats:item.itemfurnaceboat:*>);
+recipes.remove(<primal:worktable_slab:*>);
+recipes.remove(<primal:worktable_shelf:*>);
 recipes.remove(<minecraft:bed:*>);
 
 //-Immersive turrets removed due to immense lag
