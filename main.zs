@@ -11,6 +11,12 @@ recipes.addShapeless(<bcextrapipes:teleport_sender_item>, [<bcextrapipes:telepor
 recipes.addShapeless(<bcextrapipes:teleport_receiver_item>, [<bcextrapipes:teleport_sender_item>, <minecraft:hopper>]);
 recipes.addShapeless(<bcextrapipes:teleport_sender_item>*4, [<buildcrafttransport:pipe_diamond_item>, <avaritia:endest_pearl>]);
 
+recipes.remove(<bcextrapipes:teleport_receiver_fluid>);
+recipes.remove(<bcextrapipes:teleport_sender_fluid>);
+recipes.addShapeless(<bcextrapipes:teleport_sender_fluid>, [<bcextrapipes:teleport_receiver_fluid>.giveBack(<minecraft:hopper>)]);
+recipes.addShapeless(<bcextrapipes:teleport_receiver_fluid>, [<bcextrapipes:teleport_sender_fluid>, <minecraft:hopper>]);
+recipes.addShapeless(<bcextrapipes:teleport_sender_fluid>*4, [<buildcrafttransport:pipe_diamond_fluid>, <avaritia:endest_pearl>]);
+
 recipes.addShaped(<buildcraftfactory:chute>, 
 	[[<ore:stoneToolMaterial>, <extrautils2:minichest>, <ore:stoneToolMaterial>], 
 	[<ore:stoneToolMaterial>, <ore:gearStone>, <ore:stoneToolMaterial>], 
@@ -128,9 +134,7 @@ recipes.addShaped(<ftfragileglass:ftsugarcauldron>,
 	[null, null, null]]);
 
 //Replaced enchanting table
-recipes.remove(<minecraft:enchanting_table>);
 recipes.remove(<csb_ench_table:ender_enchanting_table>);
-<minecraft:enchanting_table>.displayName = "";
 <csb_ench_table:ender_enchanting_table>.displayName = "Enchanting table";
 recipes.addShaped(<csb_ench_table:ender_enchanting_table>, 
 	[[null, <ore:book>, null], 
@@ -140,3 +144,6 @@ recipes.addShaped(<csb_ench_table:ender_enchanting_table>,
 //Dwarven boom sticks for all
 recipes.remove(<dwarven_candles:dynamite>);
 recipes.addShapeless(<dwarven_candles:dynamite> *16, [<minecraft:tnt>]);
+
+//String from wool
+recipes.addShapeless(<minecraft:string> * 4, [<minecraft:wool:*>, <ore:toolShears>.transformDamage()]);
